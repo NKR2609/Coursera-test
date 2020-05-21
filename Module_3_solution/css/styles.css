@@ -1,0 +1,44 @@
+body {
+	background-color: white;
+}
+.navbar {
+	border: 3px solid black;
+	border-radius: 0px;
+}
+h1 {
+	color:black;
+}
+#collapsable-nav {
+	border: 3px solid black;
+	margin-bottom: -9px;
+	margin-right: -33px;
+	margin-left: -33px;
+}
+.container-fluid hr {
+  margin:auto!important;
+  border-bottom: 3px solid black !important;
+ /*max-width: 100%;
+ */}
+
+ #nav-list a { 
+  /*text-align: center;*/ 
+  text-transform: uppercase; 
+  color:yellow;
+}
+.navbar-nav a:hover{
+	background-color: green;
+}
+ h2{
+		margin-bottom: 30px;
+		margin-top: 30px;
+}
+.row {
+	background-color: lightblue;
+	margin: auto;
+	padding: 20px;
+}
+@media (max-width: 575px) {
+			.col-xs-12{
+				margin-left: 40px;
+				margin-right: 40px;
+			}
