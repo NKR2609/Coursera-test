@@ -6,7 +6,7 @@
 					message;
 					document.getElementById('demo').innerHTML = 
 					"<b>The date and time is </b>" + "" + Date();
-					if (name === "premi" || "Premi") {
+					if (name === "premi" || name=== "Premi") {
 					var message1 = document
             .querySelector("#name")
             .textContent;
