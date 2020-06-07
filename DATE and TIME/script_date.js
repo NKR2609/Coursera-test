@@ -6,8 +6,15 @@
 					message;
 					document.getElementById('demo').innerHTML = 
 					"<b>The date and time is </b>" + "" + Date();
-				if (name === "premi") {
-					var message = "<h2>She " + "loves" + "NIRMAL!</h2>";
+					if (name === "premi") {
+					var message1 = document
+            .querySelector("#name")
+            .textContent;
+            message1 = "<h2>She " + "loves" + " NIRMAL!</h2>";
+            document
+            .querySelector("div")
+            .innerHTML = message1;
+  
 				}
 			}
 			document.querySelector("button")
