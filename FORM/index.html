@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name="viewport" content="width=device-width" initial-scale="1">
+	<title>Form for nothing</title>
+</head>
+<body>
+	<form method="POST" action="#" target="_self" autocomplete="on">
+		<fieldset>
+			<legend style="text-align: center;">COLLEGE DETAILS</legend>
+		<label for="fname">FIRST NAME:</label><br>
+		<input type="text" name="fname" id="fname" required><br><br>
+		<label for="lname">LAST NAME:</label><br>
+		<input type="text" name="lname" id="lname" required><br><br>
+		<label for="day">DAY:</label>
+		<input type="number" name="day" id="day" min="1" max="31" required>
+		<label for="month" style="margin-left:50px;">MONTH:</label>
+		<input list="month" name="months" required>
+		<datalist id="month">
+			<option value="JANUARY">JANUARY</option>
+			<option value="FEBRUARY">FEBRUARY</option>
+			<option value="MARCH">MARCH</option>
+			<option value="APRIL">APRIL</option>
+			<option value="MAY">MAY</option>
+			<option value="JUNE">JUNE</option>
+			<option value="JULY">JULY</option>
+			<option value="AUGUST">AUGUST</option>
+			<option value="SEPTEMBER">SEPTEMBER</option>
+			<option value="OCTOBER">OCTOBER</option>
+			<option value="NOVEMBER">NOVEMBER</option>
+			<option value="DECEMBER">DECEMBER</option>
+		</datalist>
+		<label for="year" style="margin-left:50px;">YEAR:</label>
+		<input type="number" name="year" id="year" min="1950" max="2020" required><br><br>
+		<label for="GENDER" style="margin-right:10px;">GENDER:</label>
+		<label for="male" >MALE</label>
+		<input type="radio" name="gender" id="male" value="male" style="margin-right:10px;" required> 
+		<label for="female">FEMALE</label>
+		<input type="radio" name="gender" id="female" value="female"style="margin-right:10px;" required> 
+		<label for="other">OTHER</label>
+		<input type="radio" name="gender" id="other" value="Other"style="margin-right:10px;" required><br><br>
+		<label for="study_year">YEAR OF STUDY:</label>
+		<input list="study_year" name="study" required>
+		<datalist id="study_year">
+			<option value="I">I</option>
+			<option value="II">II</option>
+			<option value="III">III</option>
+			<option value="IV">IV</option>
+		</datalist>
+		<label for="branch">BRANCH:</label>
+		<select id="branch" name="engg">
+			<optgroup label="Depatments">
+			<option value="CIVIL">CIVIL</option>
+			<option value="ECE">ECE</option>
+			<option value="MECH">MECH</option>
+			<option value="CSE">CSE</option>
+			<optgroup label="PSYCHO"><option value="(P)EEE">(P)EEE</option>
+			</optgroup>
+		</optgroup>
+		</select><br><br>
+		<label for="cgpa">CGPA:</label>
+		<input type="number" name="mark" id="cgpa" step="0.1" min="0" max="10" required>
+		<br><br>
+	</fieldset><br><br>
+		<fieldset>
+			<legend style="text-align: center;">PERSONAL DETAILS</legend>
+			<label for="gov_name">NAME AS PER GOVERNMENT PROOF:</label>
+			<input type="text" name="full_name" id="gov_name" style="margin-left: 20px;" required><br><br>
+			<label for="email">EMAIL:</label>
+			<input type="email" name="mail_id" id="email" style="margin-left: 245px;" required><br><br>
+			<label for="telephone">PHONE NUMBER:</label>
+			<input type="text" name="phone" id="telephone" style="margin-left: 170px; required"><br><br>
+			<label for="address">ADDRESS:</label>
+			<input type="text" name="address" id="address" size="50" style="margin-left: 223px;" required><br><br>
+			<label for="state">STATE:</label>
+			<input type="text" name="state" id="state"style="margin-left: 250px;"><br required><br>
+			<label for="city">CITY:</label>
+			<input type="text" name="city" id="city"style="margin-left: 260px;" required><br><br>
+			<label for="pincode">PINCODE:</label>
+			<input type="text" name="pincode" id="pincode" maxlength="6" style="margin-left: 225px;" required>
+		</fieldset><br><br>
+		<fieldset>
+			<legend style="text-align: center;">PROJECT DETAILS</legend>
+			<label for="report">REPORT:</label>
+			<input type="file" name="report" id="report" required><br><br>
+			<label for="ppt">PPT:</label>
+			<input type="file" name="ppt" id="ppt" required><br><br>
+			<label for="Start_date">REPORT START DATE:</label>
+			<input type="date" name="Start_date" id="Start_date" min="2020-01-01" max="2020-08-23" required><br><br>
+			<label for="End_date">REPORT END DATE:</label>
+			<input type="date" name="End_date" id="End_date" max="2020-08-23" required><br><br>
+			<label for="status">PROJECT REPORT STATUS:</label>
+			<input list="status" name="completion" required>
+			<datalist id="status">
+				<option value="Completed">Completed</option>
+				<option value="On Process">On Process</option>
+				<option value="Not Started">Not Started</option>
+				<option value="Mudika Mudiyathu">Mudika Mudiyathu</option>
+			</datalist><br><br>
+			<label for="Comment" style="margin: 10px;">FEEDBACK</label>
+			<textarea rows="10" cols="30"></textarea>
+		</fieldset><br>
+		<input type="submit" name="submit" value="submit" style="margin-left: 330px;">
+		<input type="reset" name="reset" id="reset">
+	</form>
+</body>
